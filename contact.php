@@ -1,51 +1,32 @@
 <?php
-if(isset($_POST['email']) || isset($_POST['phone']) {
+if(isset($_POST['submit']){
+	$email_to = "";
+    $email_subject = "New message";
  
-    // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "fady-t94@hotmail.com";
-    $email_subject = "Spectrum contact email";
- 
-    // validation expected data exists
-    if(!isset($_POST['name']) ||
-        //!isset($_POST['company']) ||
-        !isset($_POST['email']) ||
-        !isset($_POST['phone']) ||
-        //!isset($_POST['location']) ||
-        !isset($_POST['product']) ||
-        !isset($_POST['message'])) {
-        died('We are sorry, but there appears to be a problem with the form you submitted. Please go back and try again.');       
-    }
-
-	
     $name = $_POST['name'];
     $company = $_POST['company'];
     $email = $_POST['email'];
-    $phone = $_POST['phone']);
-    $location = $_POST['location']);
-    $product = $_POST['product']);
-    $message = $_POST['message']);
+    $phone = $_POST['phone'];
+    $location = $_POST['location'];
+    $product = $_POST['product'];
+    $message = $_POST['message'];
  
+	$email_message = "";
+    $email_message .= "Name: ".$name;
+    $email_message .= "\nCompany: ".$company;
+    $email_message .= "\nEmail: ".$email;
+    $email_message .= "\nPhone: ".$phone;
+	$email_message .= "\nLocation: ".$location;
+    $email_message .= "\nProduct: ".$product;
+	$email_message .= "\nMessage: ".$message;
  
-    $email_message .= "Name: ".clean_string($name)."\n";
-    $email_message .= "Company: ".clean_string($company)."\n";
-    $email_message .= "Email: ".clean_string($email)."\n";
-    $email_message .= "Phone: ".clean_string($phone)."\n";
-	$email_message .= "Location: ".clean_string($location)."\n";
-    $email_message .= "Product: ".clean_string($product)."\n";
-	$email_message .= "Message: ".clean_string($message)."\n";
- 
-// create email headers
-$headers = 'From: '.$email."\r\n".
-'Reply-To: '.$email."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
+	mail($email_to, $email_subject, $email_message);  
 ?>
  
-<!-- include your own success html here -->
+ <meta http-equiv="refresh" content="3; index.html" />
  
-Thank you for contacting us. We will be in touch with you very soon.
+Thank you for contacting us. We will be in touch with you very soon. You will be redirected in a few seconds.
  
 <?php
- 
 }
 ?>
