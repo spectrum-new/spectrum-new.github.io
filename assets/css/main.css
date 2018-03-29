@@ -9,12 +9,19 @@
 
 /* Reset */
 
+.shrink{
+	size: 50%; !important
+}
 .lmnop {
     text-align: left;
 }
+.logo{
+	margin-bottom: 4rem;
+	padding-bottom: -4rem;	
+}
 .logo img{
-	height: 7.2rem;
-	width: 15rem;
+	height: 5rem;
+	width: 10rem;
 }
 .line_table_left {
     padding-left: 7%;
@@ -23,9 +30,9 @@
     list-style-type: circle;
 }
 .map {
-	padding-top: 10rem;
-    height: 250%;
-    width: 100%;
+	padding: 0rem;
+    height: 150%;
+    width: 125%;
 }
 .logo_links {
     text-align: center;
@@ -47,10 +54,13 @@
 	text-align: center;
 }
 .bitsmall {
-	padding: -10px, -10px, -10px, 0px;
-	margin: -10px;
+	padding-top: 2rem;
+	padding-left: 1rem;
+	margin: -2.15rem;
 }
-
+.bitsmall p{
+	padding-left: 1rem;
+}
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -59,14 +69,19 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		
 	}
-
+	html, body{
+		size: 50%;
+		max-height: 50%;
+	}
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
 
 	body {
 		line-height: 1;
+		height: 100%;
 	}
 
 	ol, ul {
@@ -1745,6 +1760,7 @@
 	p {
 		text-align: justify;
 		margin: 0 0 2rem 0;
+		line-height: 1.5rem;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -1753,7 +1769,7 @@
 		line-height: 1.5;
 		letter-spacing: 0.075em;
 		text-transform: uppercase;
-		margin: 0 0 1rem 0;
+		margin: 0 0 0rem 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2501,7 +2517,7 @@
 
 		.image.main {
 			display: block;
-			margin: 4rem 0;
+			margin: 0rem 0;
 			width: 100%;
 		}
 
@@ -2510,7 +2526,8 @@
 			}
 
 			.image.main img {
-				width: 100%;
+				width: 60%;
+				margin: auto;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -2776,8 +2793,8 @@
 		}
 
 		header > h2 + p {
-			font-size: 1rem;
-			margin-top: -0.75rem;
+			font-size: 0.8rem;
+			margin-top: -2.75rem;
 		}
 
 		header > h3 + p {
@@ -2791,7 +2808,7 @@
 		}
 
 		header.major {
-			margin: 0 0 4rem 0;
+			margin: 0 0 1rem 0;
 			text-align: center;
 		}
 
@@ -3072,9 +3089,9 @@
 			height: 100%;
 			background-color: #212931;
 			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
-			background-size: auto,								auto,														100% auto;
+			background-size: auto,								auto,														auto;
 			background-position: center,								center,														top center;
-			background-repeat: repeat,								no-repeat,													no-repeat;
+			background-repeat: repeat,								repeat,													repeat;
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
 		}
@@ -3465,13 +3482,13 @@
 		-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 		transition: transform 1s ease, opacity 1s ease;
 		background: rgba(255, 255, 255, 0.175);
-		height: 4rem;
-		line-height: 4rem;
-		margin: -4rem auto 0 auto;
+		height: 2.75rem;
+		line-height: 2.75rem;
+		margin: -11.75rem auto 0 auto;
 		overflow: hidden;
 		padding: 0 2rem 0 0;
 		position: relative;
-		width: calc(100% - 4rem);
+		width: calc(75% - 10rem);
 		max-width: 72rem;
 		z-index: 2;
 	}
@@ -3608,7 +3625,7 @@
 		background-color: #ffffff;
 		position: relative;
 		margin: 0 auto;
-		width: calc(100% - 4rem);
+		width: calc(75% - 10rem);
 		max-width: 72rem;
 		z-index: 2;
 	}
@@ -3628,7 +3645,7 @@
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 3rem 3rem 2.25rem 3rem ;
 		}
 
 			#main > .post header.major > .date {
@@ -3636,9 +3653,9 @@
 			}
 
 			#main > .post header.major > h1, #main > .post header.major h2 {
-				font-size: 4rem;
-				line-height: 1.1;
-				margin: 0 0 2rem 0;
+				font-size: 3rem;
+				line-height: 1;
+				margin: 0 0 0rem 0;
 			}
 
 			#main > .post.featured {
@@ -3648,7 +3665,7 @@
 			@media screen and (max-width: 1280px) {
 
 				#main > .post {
-					padding: 6rem 4rem 4rem 4rem ;
+					padding: 3rem 4rem 4rem 4rem ;
 				}
 
 			}
@@ -3807,8 +3824,7 @@
 		cursor: default;
 		position: relative;
 		margin: 0 auto;
-		width: calc(100% - 4rem);
-		max-width: 72rem;
+		width: calc(75% - 10rem);
 		z-index: 2;
 	}
 
@@ -4042,7 +4058,7 @@
 			-webkit-flex-shrink: 1;
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
-			padding: 4rem 4rem 2rem 4rem ;
+			padding: 2rem 2rem 1rem 2rem ;
 			border-left: solid 2px #e2e2e2;
 		}
 
@@ -4085,7 +4101,7 @@
 					-webkit-align-items: center;
 					-ms-align-items: center;
 					align-items: center;
-					padding: 3.15rem 4rem;
+					padding: 1.75rem 1.75rem;
 				}
 
 					#footer > section.split.contact > section > * {
@@ -4115,12 +4131,9 @@
 						flex-grow: 1;
 					}
 
-					#footer > section.split.contact > section:first-child {
-						padding: 4rem 4rem 3rem 4rem;
-					}
 
 					#footer > section.split.contact > section:last-child {
-						padding: 3rem 4rem 4rem 4rem;
+						margin: 1.4rem;
 					}
 
 					#footer > section.split.contact > section.alt {
