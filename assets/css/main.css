@@ -9,9 +9,6 @@
 
 /* Reset */
 
-.shrink{
-	size: 50%; !important
-}
 .lmnop {
     text-align: left;
 }
@@ -37,11 +34,12 @@
 .logo_links {
     text-align: center;
 }
+/*
 .logo_links img{
     height:10%;
     width:175px; 
     text-align: center;
-}
+}*/
 .logo_links a {
     border: 0 none;
 }
@@ -61,7 +59,29 @@
 .bitsmall p{
 	padding-left: 1rem;
 }
-
+#linecard{
+	object-fit: none;
+	height: 200%;
+}
+.line_logo{
+	width: 40%;
+	height: 10%;
+}
+.line_logo img, 
+.line_logo a{
+	width: 60%;
+	height: 75px;
+	margin-bottom: -4rem;
+}
+.line_description{
+	width: 60%;
+}
+.line_description li{
+	font-size: 75%;
+}
+.mission{
+	height: 5rem;
+}
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -3645,7 +3665,7 @@
 		}
 
 		#main > .post {
-			padding: 3rem 3rem 2.25rem 3rem ;
+			padding: 1rem 3rem 2.25rem 3rem ;
 		}
 
 			#main > .post header.major > .date {
