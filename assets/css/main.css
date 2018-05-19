@@ -12,13 +12,14 @@
 .lmnop {
     text-align: left;
 }
+/*
 .logo{
 	margin-bottom: 4rem;
 	padding-bottom: -4rem;	
-}
+}*/
 .logo img{
-	height: 5rem;
-	width: 10rem;
+	height: 6rem;
+	width: 12rem;
 }
 .line_table_left {
     padding-left: 7%;
@@ -82,6 +83,29 @@
 .mission{
 	height: 5rem;
 }
+#header ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: white;
+}
+
+#header li {
+    float: left;
+}
+
+#header li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}/*
+.link{
+	size: 80% !important;
+}*/
+
+
+
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -3107,12 +3131,7 @@
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
-			background-size: auto,								auto,														auto;
-			background-position: center,								center,														top center;
-			background-repeat: repeat,								repeat,													repeat;
-			background-attachment: scroll,								scroll,														scroll;
+			background-color: white;
 			z-index: -1;
 		}
 
@@ -3410,7 +3429,7 @@
 		}
 
 		#header a {
-			color: #ffffff;
+			/*color: #ffffff;*/
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 		}
 
@@ -3453,19 +3472,19 @@
 			border-color: #ffffff;
 			border-width: 5px !important;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-size: 2.25rem;
+			font-size: 1.5rem;
 			font-weight: 900;
 			letter-spacing: 0.075em;
-			line-height: 1;
+			line-height: 2.5;
 			padding: 1rem 1.75rem;
 			text-transform: uppercase;
 			visibility: visible;
 		}
 
-			#header .logo:hover {
+			/*#header .logo:hover {
 				border-color: #18bfef !important;
 				color: #18bfef !important;
-			}
+			}*/
 
 		@media screen and (max-width: 980px) {
 
@@ -3645,7 +3664,7 @@
 		background-color: #ffffff;
 		position: relative;
 		margin: 0 auto;
-		width: calc(75% - 10rem);
+		width: calc(75%);
 		max-width: 72rem;
 		z-index: 2;
 	}
@@ -3839,12 +3858,12 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #f5f5f5;
+		background-color: white;
 		color: #909498;
 		cursor: default;
 		position: relative;
 		margin: 0 auto;
-		width: calc(75% - 10rem);
+		width: calc(75%);
 		z-index: 2;
 	}
 
