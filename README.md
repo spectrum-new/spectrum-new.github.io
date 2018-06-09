@@ -1,1 +1,0 @@
-# spectrum-new.github.io
