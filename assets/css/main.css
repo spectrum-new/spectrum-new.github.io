@@ -65,20 +65,22 @@
 	height: 200%;
 }
 .line_logo{
-	width: 25%;
+	width: 20%;
 	height: 10%;
 }
 .line_logo img, 
 .line_logo a{
-	width: 50%;
+	width: 75%;
 	height: 75px;
-	margin-bottom: -6rem;
+	margin-bottom: -4rem;
+	margin-left: 0rem;
+	padding: 0px;
 }
 .line_description{
-	width: 25%;
+	width: 30%;
 }
 .line_description li{
-	font-size: 70%;
+	font-size: 60%;
 }
 .mission{
 	height: 5rem;
