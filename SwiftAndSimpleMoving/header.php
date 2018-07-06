@@ -9,7 +9,7 @@
 <div class="header">
 	<ul class="topnav">
 		<li><a href="index.htm">Home</a></li>
-		<li><a href="about">About Us</a></li>
+		<li><a href="about.php">About Us</a></li>
 <!--		<li><div class="dropdown">
 			  <a class="dropbtn">Services</a>
 				  <div class="dropdown-content">
@@ -23,8 +23,8 @@
 -->
 		<li><a href="#">Services</a></li>
 		<li><a href="#">Testimonials</a></li>
-		<li><a href="quote">Free Quote</a></li>
-		<li><a href="contact">Contact</a></li>
+		<li><a href="quote.php">Free Quote</a></li>
+		<li><a href="contact.php">Contact</a></li>
 	</ul>
 </div>
 
